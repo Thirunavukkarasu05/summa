@@ -1,0 +1,31 @@
+import csv
+
+data = [
+    ["tweet_id","text","location","latitude","longitude","label","timestamp"],
+
+    # Harmful (Extended)
+    ["1000000563","That missionary organization working in tribal areas should be banned and workers imprisoned.","Jharkhand","23.3441","85.3096","harmful","2023-07-07 01:10:00"],
+    ["1000000722","Let us organize a boycott and violence campaign against every shop owned by that minority community.","Kochi","9.9312","76.2673","harmful","2023-10-19 11:18:00"],
+    ["1000000723","Nikkal bsdk, chutiya saala. I will beat you if I see you again.","Delhi","28.6139","77.2090","harmful","2023-10-20 12:00:00"],
+    ["1000000724","Poda naaye, punda. I will hack your account and expose your home address.","Chennai","13.0827","80.2707","harmful","2023-10-21 14:30:00"],
+    ["1000000725","Those people are invaders and should be deported immediately to save our nation.","Mumbai","19.0760","72.8777","harmful","2023-10-22 16:45:00"],
+    ["1000000726","Kill them all, don't leave anyone alive in that neighborhood.","Meerut","28.9845","77.7064","harmful","2023-10-23 10:00:00"],
+    ["1000000727","You are a disgusting animal and you deserve to die.","Patna","25.5941","85.1376","harmful","2023-10-24 12:00:00"],
+
+    # Non-Harmful (Extended with positive adjectives)
+    ["1000000353","The Bengaluru tech community organized a free coding workshop for youth which was truly inspiring.","Bengaluru","12.9716","77.5946","non-harmful","2023-10-17 05:09:00"],
+    ["1000000354","Great weather today in Hyderabad! Perfect for a walk in the park.","Hyderabad","17.3850","78.4867","non-harmful","2023-10-18 09:00:00"],
+    ["1000000355","I really enjoyed the new movie that released last week. The acting was superb.","Kolkata","22.5726","88.3639","non-harmful","2023-10-19 20:15:00"],
+    ["1000000356","Let's all work together to keep our city clean and green.","Pune","18.5204","73.8567","non-harmful","2023-10-20 11:10:00"],
+    ["1000000357","Congratulations to the Indian team for their amazing victory!","Ahmedabad","23.0225","72.5714","non-harmful","2023-10-21 18:30:00"],
+    ["1000000358","You are so beautiful and kind, thank you for your help!","Lucknow","26.8467","80.9462","non-harmful","2023-10-22 09:00:00"],
+    ["1000000359","What a beautiful day it is to be alive and happy.","Shimla","31.1048","77.1734","non-harmful","2023-10-23 07:00:00"],
+    ["1000000360","The sunset over the mountains was absolutely gorgeous.","Manali","32.2396","77.1887","non-harmful","2023-10-24 18:00:00"],
+    ["1000000361","I love spending time with my family, they are so wonderful.","Jaipur","26.9124","75.7873","non-harmful","2023-10-25 20:00:00"]
+]
+
+with open("dataset.csv", "w", newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print("✅ dataset.csv updated with more diverse samples!")

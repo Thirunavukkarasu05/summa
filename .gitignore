@@ -1,0 +1,46 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment (if you create one later)
+venv/
+env/
+ENV/
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# CSV output files (generated data)
+processed_output.csv
+
+# Temporary or generated HTML files
+*.html
+
+# ngrok executable (optional, if you don’t want to push it)
+ngrok.exe
+
+# Environment variables (if you add later)
+.env
+
+# Jupyter notebook checkpoints (if used)
+.ipynb_checkpoints/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# Python test cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
